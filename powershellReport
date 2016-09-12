@@ -46,7 +46,7 @@ $site.Dispose()
 }
 
 
-Get-DocInventory "http://SharePointServer" | Export-Csv -NoTypeInformation -Path "$($Env:userprofile)\Desktop\DocDetailDirty.csv"
+Get-DocInventory "$($serverLocation)" | Export-Csv -NoTypeInformation -Path "$($Env:userprofile)\Desktop\DocDetailDirty.csv"
 
 
 #Get Macro and add to Excel document
