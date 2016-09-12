@@ -8,6 +8,8 @@
 #make sure Macro Security Settings in Excel are set to "Trust" access to VBA model
 [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.Vbe.Interop") | Out-Null
 
+$serverLocation = Read-Host -Prompt 'Please input your SharePoint server address (Example: http://sharepoint.yourcompany.com or http://testserver)'
+
 function Get-DocInventory([string]$siteUrl) {
 $site = New-Object Microsoft.SharePoint.SPSite $siteUrl
 foreach ($web in $site.AllWebs) {
