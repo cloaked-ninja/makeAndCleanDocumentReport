@@ -19,7 +19,7 @@ continue
 }
 #if exists as item property then can call like $item.Title. if added, call like $item.["Named Field"]
 #Get information for all items on SharePoint site
-
+ 
 foreach ($item in $list.Items) {
 $data = @{
 "Top Level Site Name" = $site.Url
