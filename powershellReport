@@ -41,5 +41,5 @@ $site.Dispose()
 }
 
 
-Get-DocInventory "http://yoursharepointserver" | Export-Csv -NoTypeInformation -Path "$($Env:userprofile)\Desktop\DocDetailDirty.csv"
+Get-DocInventory "http://yoursharepointserver" | Export-Csv -NoTypeInformation -Path "$($Env:userprofile)\Desktop\DocDetailReport.csv"
 
